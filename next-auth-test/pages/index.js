@@ -7,7 +7,7 @@ const Home = () => {
       <p>ここにNotionワークページを表示させる</p>
       <div>
         <button>
-          <Link href="/private"><a>Privateへ</a></Link></button>
+          <Link href="/page/private"><a>Privateへ</a></Link></button>
       </div>
     </>
   )

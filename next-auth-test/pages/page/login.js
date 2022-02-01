@@ -60,7 +60,7 @@ const Login = () => {
                 <Card.Body css={{ p: 0 }}>
                   <Card.Image
                     objectFit="cover"
-                    src="login_400x400.png"
+                    src="../login_400x400.png"
                     width='50%'
                     height="auto"
                   />
@@ -75,7 +75,7 @@ const Login = () => {
                  <Button auto color="warning" css={{ px: '$13' }} rounded fullWidth
                  iconRight={<Iconly name="Send" set="bulk" primaryColor="Darkgreen"/>} onClick={login}>
                   
-                  <Link href="/"><a>教材棚へGO!!!　</a></Link>
+                  <Link href="../"><a>教材棚へGO!!!　</a></Link>
                   </Button>
                 
                   </Grid>

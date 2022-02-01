@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Cookies from "js-cookie";
 
 //認証コンポーネント読み込み
-import Auth from "../components/auth";
+import Auth from "../../components/auth";
 
 const Private = () => {
 
@@ -12,7 +12,7 @@ const Private = () => {
     //ログアウト処理
     const logout = () => {
         Cookies.remove("signedIn");
-        router.replace("/login");
+        router.replace("/page/login");
     }
 
     return (
@@ -20,7 +20,7 @@ const Private = () => {
             <h1>Private</h1>
             <button onClick={logout}>ログアウト</button>
             <div>
-                <Link href="/"><a>Homeへ</a></Link>
+                <Link href="../"><a>Homeへ</a></Link>
             </div>
         </Auth>
     )
