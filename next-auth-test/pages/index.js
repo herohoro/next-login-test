@@ -1,37 +1,16 @@
+import Link from "next/link";
 
-import * as React from 'react';
-import { 
-  NextUIProvider,
-  Button,
-  Input,
-  Spacer,
-  Link,
-  Card,
-  Grid,
-  useTheme, Text
-
-} from '@nextui-org/react';
-
-export default function Home() {
-  const colors = [
-    'primary',
-    'secondary',
-    'success',
-    'warning',
-    'error',
-    'gradient'
-    
-  ]
-
+const Home = () => {
   return (
-    <NextUIProvider>
-      
+    <>
       <h1>Home</h1>
+      <p>ここにNotionワークページを表示させる</p>
       <div>
-        <Link href="/private"><a>Privateへ</a></Link>
+        <button>
+          <Link href="/private"><a>Privateへ</a></Link></button>
       </div>
-    </NextUIProvider>
-  
+    </>
   )
-
 }
+
+export default Home;

@@ -23,7 +23,7 @@ const Private = () => {
                 <Link href="/"><a>Homeへ</a></Link>
             </div>
         </Auth>
-    );
+    )
 }
 
 export default Private;
